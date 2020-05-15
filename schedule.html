@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<title>Schedule</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Yunjia Bao">
+	<meta name="description" content="Yunjia Bao's webpage, schedule">
+  	<!-- Mobile Specific Metas
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./skeleton.css">
+	<link rel="stylesheet" type="text/css" href="./normalize.css">
+	<link rel="stylesheet" type="text/css" href="./Yunjia.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!-- icon declaration-->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131715320-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-131715320-1');
+	</script>
+
+	<!-- Navbar script -->
+	<script type="text/javascript">
+		function navdrop() {
+			var x = document.getElementsByClassName("navbar-item");
+			var i;
+			for (i=0; i < x.length; i++){
+				if (x[i].style.display === "inline") {
+				x[i].style.display = "none";
+				}
+				else {
+				x[i].style.display = "inline";}
+			}
+			var x = document.getElementById("menu");
+			if (x.getAttribute("src") === "menu.png")
+				{x.setAttribute("src","menu-onclick.png");}
+			else {x.setAttribute("src","menu.png");}
+		}
+	</script>
+
+</head>
+
+<body>
+<div class="container">
+
+	<!-- NAV BAR -->
+		<div class="navbar-spacer" style="margin-left: 5%; font-size: 2.2rem; font-variant: small-caps;"> Yunjia's Site </div>
+		<!-- empty content if index-->
+		<nav class="navbar">
+			<div class="container">
+				<ul class="navbar-list" id="navlist">
+					<li class="navbar-title">
+						<a href="javascript:void(0);" onclick="navdrop();"><img src="menu.png" style="display: inline-block; height: 4.5rem;" id="menu"></a>
+					</li>
+					<li class="navbar-item"> <a class="navbar-link" href="index.html">Home</a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="research.html">Research</a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="education.html">Education Background</a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="schedule.html"> Schedule </a> </li>
+					<li class="navbar-item" id="miscpop"> <a tabindex="0" class="navbar-link" data-toggle="popover" data-trigger="focus" data-placement="auto bottom" data-animation="true" data-content="<a class='popover-link' href='tablinum.html'>Main Page</a><br><a class='popover-link' href='music.html'>Music</a><br><a class='popover-link' href='EHT.html'>EHT Blackhole</a>"> Tablinum </a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="lib.html" title="My personal library to lend books to book lovers"> 致知草堂 </a> </li>
+				</ul>
+			</div>
+		</nav>
+
+	<br>
+	<h5> Schedule </h5>
+
+	<div class="row">
+		<div class="one column"></div>
+		<div class="ten columns">
+			<p> Due to the <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" target="_blank" rel="noreferrer">outbreak of COVID-19 in the U.S.</a>, I am working remotely following the social distancing measures. Most of my meetings are done via <a href="https://zoom.us" target="_blank" rel="noreferrer">Zoom</a>, <a href="https://meet.google.com" target="_blank" rel="noreferrer">Google Meet</a>, or Skype. I am now using Pacific daylight time (GMT-7) in Portland as my default time zone. If you would like an appointment, don't hesitate to contact me via email at <code> baoy [AT] reed.edu</code>. I understand the difficulties during this period of uncertainties, so I will try to accommodate different means of communications as much as possible. Stay safe. </p>
+			<br>
+			<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=baoy%40reed.edu&amp;color=%23711a76&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+		<div class="one column"></div>
+		</div>
+	</div>
+
+	<br>
+	<p style="font-size: 1.0rem; text-align: center;"> All content copyright: Yunjia Bao </p>
+
+</div>
+</body>
