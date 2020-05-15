@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yunjia Bao</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Yunjia Bao">
+	<meta name="description" content="Yunjia Bao's webpage, index">
+  	<!-- Mobile Specific Metas
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./skeleton.css">
+	<link rel="stylesheet" type="text/css" href="./normalize.css">
+	<link rel="stylesheet" type="text/css" href="./Yunjia.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+	<!-- icon declaration-->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="app.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131715320-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-131715320-1');
+	</script>
+
+	<!-- Navbar script -->
+	<script type="text/javascript">
+		function navdrop() {
+			var x = document.getElementsByClassName("navbar-item");
+			var i;
+			for (i=0; i < x.length; i++){
+				if (x[i].style.display === "inline") {
+				x[i].style.display = "none";
+				}
+				else {
+				x[i].style.display = "inline";}
+			}
+			var x = document.getElementById("menu");
+			if (x.getAttribute("src") === "menu.png")
+				{x.setAttribute("src","menu-onclick.png");}
+			else {x.setAttribute("src","menu.png");}
+		}
+	</script>
+
+	<!-- Email protection script -->
+	<script type="text/javascript">
+		function myemail() {
+			var x = document.getElementById("email"),
+				user = 'baoy',
+				domain = 'reed.edu';
+			x.href = 'mailto:' + user + '@' + domain;
+		}
+	</script>
+
+</head>
+<body>
+<div class="container">
+	<div class="row" style="margin-top: 5%">
+		<div class="row" id="mytitle">
+			<div class="one-half column">
+				<h3 style="text-align: center;">Yunjia Bao &nbsp 包昀嘉</h3>
+				<div class="flex">
+					<h5 class="typewriter" id="word"></h5>
+				</div>
+				<!--<h5 style="text-align: center;">A Portraitist for Natural Laws</h5>-->
+				<p style="text-align: center;">B.A. candidate (20') for physics</p>
+				<p style="text-align: center;">Department of Physics, Reed College</p>
+			</div>
+			<div class="one-half column">
+				<img src="photo.jpg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 45%; margin: 0 auto; display: block;">
+
+				<p style="font-size: xx-small;text-align: center;">credit: Eric Zhang</p>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<!-- NAV BAR -->
+		<div class="navbar-spacer"></div>
+		<nav class="navbar">
+			<div class="container">
+				<ul class="navbar-list" id="navlist">
+					<li class="navbar-title">
+						<a href="javascript:void(0);" onclick="navdrop();"><img src="menu.png" style="display: inline-block; height: 4.5rem;" id="menu"></a>
+					</li>
+					<li class="navbar-item"> <a class="navbar-link" href="index.html">Home</a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="research.html">Research</a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="education.html">Education Background</a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="schedule.html"> Schedule </a> </li>
+					<li class="navbar-item" id="miscpop"> <a tabindex="0" class="navbar-link" data-toggle="popover" data-trigger="focus" data-placement="auto bottom" data-animation="true" data-content="<a class='popover-link' href='tablinum.html'>Main Page</a><br><a class='popover-link' href='music.html'>Music</a><br><a class='popover-link' href='EHT.html'>EHT Blackhole</a>"> Tablinum </a> </li>
+					<li class="navbar-item"> <a class="navbar-link" href="lib.html" title="My personal library to lend books to book lovers"> 致知草堂 </a> </li>
+				</ul>
+			</div>
+		</nav>
+
+	<br>
+	<h5> <b>Special Focus:</b> <a href="papers/Thesis_2020/acknowledgment.html">Thesis Acknowledgments</a> </h5>
+	<p>
+		I have just finished my thesis project. There are a few people without whom I cannot imagine this project would be as exciting and delightful as it was. I would like to take the space here to express my gratitude to them. Please click on the link to see these wonderful people to whom I own a big thank-you.
+	</p>
+	<a href="papers/Thesis_2020/acknowledgment.html" title="To acknowledgment page"><img src="thesis_teaser.jpg" style="width: 50%; display: block; margin: 0 auto;"></a>
+	<p style="font-size: small;text-align: center;">I just concluded my thesis project, but the journey has just started. What question intrigues me for <a href="research.html" title="To my research page">my thesis</a>?</p>
+	
+	<hr>
+	<h5>Personal Information</h5>
+	<div class="row" style ="margin-left: 1rem; margin-right: 1rem" id="personal">
+		<div class="first column">
+			<div class="row">
+				<div class="one-third column"> <b> Gender Pronoun </b> </div>
+				<div class="two-thirds column"> He/him/his </div>
+			</div>
+			<div class="row">
+				<div class="one-third column"> <b> Citizenship </b> </div>
+				<div class="two-thirds column"> China </div>
+			</div>
+			<div class="row">
+				<div class="one-third column"> <b> Email </b> </div>
+				<div class="two-thirds column"> <a href="mailto:avoid@spam.please.copy.com" id="email" onclick="javascript:void(0);myemail();"><code>baoy [AT] reed.edu</code></a> </div>
+			</div>
+			<div class="row">
+				<div class="one-third column"> <b> Address </b> </div>
+				<div class="two-thirds column"> 3203 SE Woodstock Boulevard, <br> Reed College MS 47, <br> Portland, OR, U.S.A., 97202 </div>
+			</div>
+			<div class="row">
+				<div class="one-third column"> <b> ORCID </b> </div>
+				<div class="two-thirds column"> 
+					<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2622-0939" href="https://orcid.org/0000-0002-2622-0939" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" rel="noreferrer">0000-0002-2622-0939</a></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-third column"> <b> Google Scholar</b> </div>
+				<div class="two-thirds column"> <img src="https://scholar.google.com/citations/images/avatar_scholar_256.png" style="width:1em;margin-right:.5em;" alt="Google scholar id icon" rel="noreferrer"> <a href="https://scholar.google.com/citations?user=PUeJ2fkAAAAJ" target="_blank" rel="noreferrer"> Author profile page </a> </div>
+			</div>
+		</div>
+		<div class="second column">
+			<section> I am Yunjia Bao <a href="name.html">(how to pronounce?)</a>, a senior <a href="http://www.reed.edu/physics" target="_blank" rel="noreferrer">physics major</a> at <a href="http://www.reed.edu" target="_blank" rel="noreferrer">Reed College</a>. I am interested in a wide gamut of topics in physics, from nonlinearities and dynamical systems to gravity and field theory, from elementary particles to cosmology. You can find my <a href="./CV.pdf">curriculum vitae here</a> and some of my works on <a href="https://inspirehep.net/author/profile/Y.Bao.4" target="_blank" rel="noreferrer">INSPIRE</a>. </section>
+			<br>
+			<section>Besides my daily dive into the ocean of physics and mathematics, I also enjoy music, especially symphonies. My favorite composer is the famous romanticist, <a href="https://en.wikipedia.org/wiki/Sergei_Rachmaninoff" target="_blank" rel="noreferrer"> S. Rachmaninoff</a>. </section>
+		</div>
+	</div>
+	<br>
+
+	<h5> Language Proficiency and Communication </h5>
+	<div class="lange" style ="margin-left: 1rem; margin-right: 1rem">
+		<div class="row">
+			<div class="two columns" style="text-align: left;"> <b> English </b> </div>
+			<div class="five columns" style="text-align: right;"> Bilingual Proficiency </div>
+			<div class="three columns"> <br> </div>	</div>
+		<div class="row">
+			<div class="two columns" style="text-align: left;"> <b> Chinese </b> </div>
+			<div class="five columns" style="text-align: right;"> Native Language Proficiency </div>
+			<div class="three columns"> <br> </div>
+		</div>
+		<div class="row">
+			<div class="two columns" style="text-align: left;"> <b> German </b> </div>
+			<div class="five columns" style="text-align: right;"> Basic Reading and Communication </div>
+			<div class="three columns"> <i> 1-year experience </i> </div>
+		</div>
+		<div class="row">
+			<div class="two columns" style="text-align: left;"> <b> French </b> </div>
+			<div class="five columns" style="text-align: right;"> Basic Reading and Communication </div>
+			<div class="three columns"> <i> 1-year experience </i> </div>
+		</div>
+	</div>
+
+	<hr>
+	<blockquote style="font-size: 10pt"><p>We have this one life to appreciate the grand design of the Universe, and for that, I am extremely grateful. </p><cite>Steven Hawking</cite></blockquote>
+	
+	<br>
+	<p style="font-size: 1.0rem; text-align: center;"> All content copyright: Yunjia Bao </p>
+</div>
+
+	<!--  Typewriter Effect -->
+	<script type="text/javascript">
+		function shuffle(array) {
+		  var m = array.length, t, i;
+		
+		  // While there remain elements to shuffle…
+		  while (m) {
+		
+		    // Pick a remaining element…
+		    i = Math.floor(Math.random() * m--);
+		
+		    // And swap it with the current element.
+		    t = array[m];
+		    array[m] = array[i];
+		    array[i] = t;
+		  }
+		
+		  return array;
+		}
+
+		const words = ["A Portraitist for Natural Laws", "An Observer of the Physical World", "A Challenger to Existing Models", "A Coffee Brewer", "A Classical Music Enthusiast", "An Amateur Pianist", "A Black-box Opener", "A Protégé of Nature", "A ?"];
+		shuffle(words);
+		let i = 0;
+		let timer;
+
+		function typingEffect() {
+			let word = words[i].split("");
+			var loopTyping = function() {
+				if (word.length > 0) {
+					document.getElementById('word').innerHTML += word.shift();
+				} else {
+					deletingEffect();
+					return false;
+				};
+				if (word.length == 0) {timer = setTimeout(loopTyping, 2000);}
+				else{
+				timer = setTimeout(loopTyping, Math.floor(Math.random() * 200) + 50);}
+			};
+			loopTyping();
+		};
+
+		function deletingEffect() {
+			let word = words[i].split("");
+			var loopDeleting = function() {
+				if (word.length > 1) {
+					word.pop();
+					document.getElementById('word').innerHTML = word.join("");
+				} else {
+					document.getElementById('word').innerHTML = " ";
+					if (words.length > (i + 1)) {
+						i++;
+					} else {
+						i = 0;
+					};
+					typingEffect();
+					return false;
+				};
+				timer = setTimeout(loopDeleting, Math.floor(Math.random() * 30) + 10);
+			};
+			loopDeleting();
+		};
+	typingEffect();
+	</script>
+	
+</body>
+</html>
